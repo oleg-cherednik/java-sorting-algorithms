@@ -8,6 +8,7 @@ import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
 /**
  * <a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble Sort</a>
  * <ul>
+ * <li><tt>0 <= i <= n</tt></li>
  * <li>Time complexity - <tt>O(n<sup>2</sup>)</tt></li>
  * <li>Space complexity - <tt>O(1)</tt></tt></li>
  * </ul>
@@ -18,10 +19,7 @@ import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
 @SuppressWarnings("MethodCanBeVariableArityMethod")
 public final class BubbleSort {
 
-    public static int[] sortAsc(int[] arr) {
-        if (arr == null)
-            return null;
-
+    public static void sortAsc(int[] arr) {
         for (int r = arr.length - 1; ; r--) {
             boolean stop = true;
 
@@ -36,8 +34,6 @@ public final class BubbleSort {
             if (stop)
                 break;
         }
-
-        return arr;
     }
 
     private BubbleSort() {
