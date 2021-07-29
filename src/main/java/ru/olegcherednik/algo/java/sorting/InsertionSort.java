@@ -6,7 +6,7 @@ import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
  * <a href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion Sort</a>
  * <ul>
  * <li><tt>0 <= i <= n</tt></li>
- * <li>Average time complexity - <tt>O(n<sup>2</sup>)</tt></li>
+ * <li>Time complexity - <tt>O(n<sup>2</sup>)</tt></li>
  * <li>Space complexity - <tt>O(1)</tt></tt></li>
  * </ul>
  *

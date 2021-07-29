@@ -6,7 +6,7 @@ package ru.olegcherednik.algo.java.sorting;
  * <ul>
  * <li><tt>0 <= i <= n</tt></li>
  * <li><tt>0 <= A[i] <= k</tt></li>
- * <li>Average time complexity - <tt>O(n+k)</tt></li>
+ * <li>Time complexity - <tt>O(n+k)</tt></li>
  * <li>Space complexity - <tt>O(k)</tt></tt></li>
  * </ul>
  *
