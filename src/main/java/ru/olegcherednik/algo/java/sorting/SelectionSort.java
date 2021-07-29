@@ -1,5 +1,6 @@
 package ru.olegcherednik.algo.java.sorting;
 
+import static ru.olegcherednik.algo.java.sorting.SortUtils.example;
 import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
 
 /**
@@ -29,6 +30,10 @@ public final class SelectionSort {
                 minIndex = i;
 
         return minIndex;
+    }
+
+    public static void main(String... args) {
+        example(SelectionSort::sortAsc);
     }
 
     private SelectionSort() {

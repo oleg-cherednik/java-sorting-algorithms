@@ -1,5 +1,7 @@
 package ru.olegcherednik.algo.java.sorting;
 
+import static ru.olegcherednik.algo.java.sorting.SortUtils.example;
+
 /**
  * <a href="https://en.wikipedia.org/wiki/Counting_sort">Counting Sort</a>
  *
@@ -37,6 +39,10 @@ public final class CountingSort {
             max = Math.max(max, val);
 
         return max;
+    }
+
+    public static void main(String... args) {
+        example(CountingSort::sortAsc);
     }
 
     private CountingSort() {

@@ -1,5 +1,6 @@
 package ru.olegcherednik.algo.java.sorting;
 
+import static ru.olegcherednik.algo.java.sorting.SortUtils.example;
 import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
 
 /**
@@ -20,6 +21,10 @@ public final class InsertionSort {
         for (int i = 1; i < arr.length; i++)
             for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--)
                 swap(arr, j, j + 1);
+    }
+
+    public static void main(String... args) {
+        example(InsertionSort::sortAsc);
     }
 
     private InsertionSort() {

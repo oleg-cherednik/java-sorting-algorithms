@@ -1,5 +1,6 @@
 package ru.olegcherednik.algo.java.sorting;
 
+import static ru.olegcherednik.algo.java.sorting.SortUtils.example;
 import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
 
 /**
@@ -31,6 +32,10 @@ public final class BubbleSort {
             if (stop)
                 break;
         }
+    }
+
+    public static void main(String... args) {
+        example(BubbleSort::sortAsc);
     }
 
     private BubbleSort() {
