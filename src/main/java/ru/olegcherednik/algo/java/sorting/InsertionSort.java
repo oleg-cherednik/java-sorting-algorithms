@@ -1,8 +1,5 @@
 package ru.olegcherednik.algo.java.sorting;
 
-import java.util.Arrays;
-import java.util.Random;
-
 import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
 
 /**
@@ -26,18 +23,6 @@ public final class InsertionSort {
     }
 
     private InsertionSort() {
-    }
-
-    public static void main(String... args) {
-        int[] arr = new int[20];
-        Random random = new Random();
-
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = random.nextInt(20);
-
-        System.out.println(Arrays.toString(arr));
-        sortAsc(arr);
-        System.out.println(Arrays.toString(arr));
     }
 
 }
