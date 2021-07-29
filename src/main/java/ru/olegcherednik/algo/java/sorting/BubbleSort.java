@@ -18,14 +18,14 @@ import static ru.olegcherednik.algo.java.sorting.SortUtils.swap;
 public final class BubbleSort {
 
     public static void sortAsc(int[] arr) {
-        for (int r = arr.length - 1; ; r--) {
+        for (int hi = arr.length - 1; ; hi--) {
             boolean stop = true;
 
-            for (int l = 0; l < r; l++) {
-                if (arr[l] <= arr[l + 1])
+            for (int lo = 0; lo < hi; lo++) {
+                if (arr[lo] <= arr[lo + 1])
                     continue;
 
-                swap(arr, l, l + 1);
+                swap(arr, lo, lo + 1);
                 stop = false;
             }
 
